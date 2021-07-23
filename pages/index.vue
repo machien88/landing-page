@@ -1,21 +1,39 @@
 <template>
   <div>
     <todo-header/>
-    <div class="onTop" @click="goto">
-      <img src="../assets/img/header/top.png">
+    <todo-aboutUs/>
+    <todo-products/>
+    <todo-partners/>
+    <todo-ourClients/>
+    <todo-contactUs/>
+    <todo-footer/>
+    <div class="scrollTop" @click="navigate">
+      <img src="../assets/images/header/scroll-top.png">
     </div>
   </div>
 </template>
 
 <script>
 import TodoHeader from '~/components/header'
+import TodoAboutUs from '~/components/aboutUs'
+import TodoProducts from '~/components/products'
+import TodoPartners from '~/components/partners'
+import TodoOurClients from '~/components/ourClients'
+import TodoContactUs from '~/components/contactUs'
+import TodoFooter from '~/components/footer'
 
 export default {
   components: {
     TodoHeader,
+    TodoAboutUs,
+    TodoProducts,
+    TodoPartners,
+    TodoOurClients,
+    TodoContactUs,
+    TodoFooter,
   },
   methods: {
-    goto() {
+    navigate() {
       let element = document.getElementById('header');
       let top = element.offsetTop;
       window.scrollTo(0, top);
@@ -24,9 +42,9 @@ export default {
 }
 </script>
 <style>
-  .onTop {
+  .scrollTop {
     position: fixed;
-    bottom: 10px;
+    bottom: 15px;
     right: 0;
     z-index: 99;
     font-size: 18px;
@@ -36,7 +54,7 @@ export default {
     cursor: pointer;
     padding: 15px;
   }
-  .onTop img {
-    width: 50px;
+  .scrollTop img {
+    width: 40px;
   }
 </style>

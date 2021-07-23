@@ -135,7 +135,7 @@ nav {
     }
     .lang {
         width: 100px;
-        height: 40px;
+        height: 35px;
         left: 0px;
         top: 0px;
         border: 1px solid #FFFFFF;
@@ -186,7 +186,7 @@ nav {
 
 .navbar-inverse {
   display: flex;
-  .menubtn {
+  .menu-button {
     display: none;
     @media (max-width: 385px) {
       display: block;
