@@ -1,0 +1,91 @@
+.content {
+    .sub-title {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 10px;
+        color: #FF3232;
+        mix-blend-mode: normal;
+    }
+    .title {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 56px;
+        text-align: center;
+        color: #FDFDFD;
+        mix-blend-mode: normal;
+    }
+    .title-body{
+        margin: auto;
+        max-width: 650px;
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 32px;
+        text-align: center;
+        color: #E6E6E6;
+    }
+}
+.content-image {
+    position: relative;
+    text-align: center;
+    .map {
+        width: 80%;
+    }
+    .location {
+        position: absolute;
+        width: 100%;
+        top: -60px;
+        left: 15px;
+        @media (max-width: 385px) {
+            top: -10px;
+        }
+    }
+    .title {
+        width: auto;
+        top: 0;
+        left: 10%;
+    }
+    .building {
+        width: 100%;
+        height: 600px;
+        left: 0;
+        position: relative;
+        background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%), url("../assets/images/aboutUS/shutterstock_1493107232.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        @media (max-width: 385px) {
+            height: 400px;
+        }
+        .sub-content {
+            position: absolute;
+            left: 10%;
+            width: 357px;
+            height: 452px;
+            background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%), url("../assets/images/aboutUS/title-banner.png");
+            background-repeat: no-repeat;
+            background-blend-mode: overlay;
+            background-size: contain;
+            @media (max-width: 385px) {
+                width: 216px;
+                height: 302px;
+                top: 50px;
+                opacity: 0.8;
+            }
+        }
+        @media (max-width: 385px) {
+            display: flex;
+            justify-content: center;
+            .sub-content {
+                left: auto;
+            }
+        }
+    }
+}
