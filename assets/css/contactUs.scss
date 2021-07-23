@@ -1,0 +1,75 @@
+.content {
+    display: flex;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    .left {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        @media (max-width: 385px) {
+            justify-content: left;
+        }
+        img {
+            width: 181px;
+            height: 62px;
+        }
+        @media (max-width: 385px) {
+            width: 100%;
+        }
+    }
+    .right {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 385px) {
+            width: 100%;
+        }
+        .content {
+            display: block;
+            .sub-title {
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 10px;
+                color: #FF3232;
+                mix-blend-mode: normal;
+            }
+            .contact-title {
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 40px;
+                text-align: left;
+                color: #FDFDFD;
+                mix-blend-mode: normal;
+            }
+            .address {
+                max-width: 300px;
+                display: flex;
+                img {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                }
+                .address-title {
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 146.28%;
+                    color: #FFFFFF;
+                    transform: rotate(0.1deg);
+    
+                }
+            }
+        }
+        
+    }
+}
