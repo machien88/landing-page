@@ -1,14 +1,14 @@
 <template>
   <div class="products" id="products">
     <img class="background" src="../assets/images/products/backgroud.png" />
-    <div class="content">
+    <div class="content-title">
       <div class="left">
         <div class="sub-title">BPLAY GAME</div>
         <div class="title">OUR PRODUCTS</div>
       </div>
-      <div class="paragrap">{{description}}</div>
+      <div class="description">{{description}}</div>
     </div>
-    <div class="list">
+    <div class="list-product">
       <div class="card">
         <img src="../assets/images/products/casino-live.png" />
       </div>
