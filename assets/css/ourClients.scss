@@ -1,0 +1,48 @@
+.container-content {
+    padding-top: 50px;
+    .sub-title {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 10px;
+        color: #FF3232;
+        mix-blend-mode: normal;
+    }
+    .title {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 56px;
+        text-align: center;
+        color: #FDFDFD;
+        mix-blend-mode: normal;
+    }
+}
+
+.list-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 50px 0 50px;
+    @media (max-width: 385px) {
+        padding: 50px 0 0 0;
+    }
+    .card {
+        margin: 15px;
+        cursor: pointer;
+        @media (max-width: 385px) {
+            margin: 5px;
+        }
+        img {
+            width: 200px;
+            object-fit: contain;
+            @media (max-width: 385px) {
+                width: 100px;
+            }
+        }
+    }
+}
